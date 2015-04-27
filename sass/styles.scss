@@ -1,0 +1,63 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+
+body{
+	background:{
+		image: url(../images/polka-bg.png);
+		repeat: repeat;
+	}
+}
+
+img.hero{
+    -moz-animation: 5s ease 0s normal none infinite swing;
+    -moz-transform-origin: center top;
+    -webkit-animation:swing 5s infinite ease-in-out;
+    -webkit-transform-origin:top;
+}
+
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-2deg)}
+    50%{-moz-transform:rotate(2deg)}
+    100%{-moz-transform:rotate(-2deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-2deg)}
+    50%{-webkit-transform:rotate(2deg)}
+    100%{-webkit-transform:rotate(-2deg)}
+}
+
+h1{
+	color: #4C2C14;
+	font-size: 72px;
+	font-family: "gooddog-new",cursive;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.push-down{
+	margin-bottom: 60px;
+}
+
+.push-dowwn{
+	margin-bottom: 30px;
+}
+
+.frame{
+	position: relative; left: 0; top: 0; width:100%;
+}
+
+.frame-pos{
+	width:100%; position: relative; top: 0; left: 0;
+}
+
+
+.frame-image{
+	width:100%; position: absolute; top: 0px; left: 0px;
+}
